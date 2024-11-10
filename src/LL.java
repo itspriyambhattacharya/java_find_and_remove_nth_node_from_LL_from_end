@@ -37,7 +37,7 @@ public class LL {
     public int delete(int pos) {
         Node prevNode = null;
         Node currentNode = head;
-        for (int i = 0; i < pos; i++) {
+        for (int i = 0; i < pos - 1; i++) {
             prevNode = currentNode;
             currentNode = currentNode.link;
         }
