@@ -20,4 +20,13 @@ public class LL {
         }
         ptr.link = n;
     }
+
+    public void display(){
+        Node ptr = head;
+        while(ptr !=  null){
+            System.out.print(ptr.data + "----->");
+            ptr = ptr.link;
+        }
+        System.out.println("null");
+    }
 }
