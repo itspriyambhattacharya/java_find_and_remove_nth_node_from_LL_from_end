@@ -21,5 +21,7 @@ public class Main {
                 Enter the node number to delete from last, 
                 1 to delete the last node, 2 to delete the second last node and so on....""");
         int n = Integer.parseInt(br.readLine());
+        int size = list.getSize();
+        int requiredNodeNumber = size - n + 1;
     }
 }
