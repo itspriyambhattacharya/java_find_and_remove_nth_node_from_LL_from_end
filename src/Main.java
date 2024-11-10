@@ -23,5 +23,10 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
         int size = list.getSize();
         int requiredNodeNumber = size - n + 1;
+        int d = list.delete(requiredNodeNumber);
+        System.out.println("\nThe deleted element is "+ d);;
+        System.out.println("""
+                The list is: """);
+        list.display();
     }
 }
