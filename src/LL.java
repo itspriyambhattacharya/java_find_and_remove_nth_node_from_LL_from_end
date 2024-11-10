@@ -29,4 +29,8 @@ public class LL {
         }
         System.out.println("null");
     }
+
+    public int getSize(){
+        return this.size;
+    }
 }
