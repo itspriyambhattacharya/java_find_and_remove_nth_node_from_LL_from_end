@@ -8,18 +8,29 @@ public class Main {
         BufferedReader br = new BufferedReader(isp);
         LL list = new LL();
 
-        list.addLast(45);
-        list.addLast(5);
-        list.addLast(55);
-        list.addLast(67);
-        list.addLast(12);
-        list.addLast(64);
-        list.addLast(89);
+//        list.addLast(45);
+//        list.addLast(5);
+//        list.addLast(55);
+//        list.addLast(67);
+//        list.addLast(12);
+//        list.addLast(64);
+//        list.addLast(89);
+
+        System.out.print("\nEnter number of elements you want to insert in the list: ");
+        int noOfElements = Integer.parseInt(br.readLine());
+
+        for (int i = 0; i < noOfElements; i++) {
+            System.out.print("\nEnter data of the node: ");
+            int data = Integer.parseInt(br.readLine());
+            list.addLast(data);
+        }
+        System.out.println("\nThe list is:");
         list.display();
 
-        System.out.println("""
+        System.out.print("""
                 Enter the node number to delete from last, 
-                1 to delete the last node, 2 to delete the second last node and so on....""");
+                1 to delete the last node, 2 to delete the second last node and so on....
+                Enter n: """);
         int n = Integer.parseInt(br.readLine());
         int size = list.getSize();
         int requiredNodeNumber = size - n + 1;
