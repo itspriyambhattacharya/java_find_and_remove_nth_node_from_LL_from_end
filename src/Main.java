@@ -8,14 +8,6 @@ public class Main {
         BufferedReader br = new BufferedReader(isp);
         LL list = new LL();
 
-//        list.addLast(45);
-//        list.addLast(5);
-//        list.addLast(55);
-//        list.addLast(67);
-//        list.addLast(12);
-//        list.addLast(64);
-//        list.addLast(89);
-
         System.out.print("\nEnter number of elements you want to insert in the list: ");
         int noOfElements = Integer.parseInt(br.readLine());
 
